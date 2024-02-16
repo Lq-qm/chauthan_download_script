@@ -6,13 +6,27 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.core.os_manager import ChromeType
 
+# Webdriver Initial
 options = webdriver.ChromeOptions()
-options.add_argument("--headless=new")
-
+# options.add_argument("--headless=new")
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-link_album = input("link do album: ")
 
-# Listagem das Musicas do Album Escolhido
+# Manage Your Account And Password
+account = input("Account: ")
+password = input("Password: ")
+
+# Access Website
+driver.get('https://chauthanh.info/forum/login.html')
+
+# Login and Password Field
+driver.find_element("id", "username").send_keys(account)
+driver.find_element("id", "password").send_keys(password)
+driver.find_element_by_xpath("//input[@value='Login']").click()
+
+# Album Link
+link_album = input("Album Link: ")
+
+# Music List of Choosed Album
 with open("musicas.txt", "w") as arquivo:
     for contagem in range(1, 10000):
         try:
