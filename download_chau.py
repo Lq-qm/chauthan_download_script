@@ -8,7 +8,7 @@ from webdriver_manager.core.os_manager import ChromeType
 
 # Webdriver Initial
 options = webdriver.ChromeOptions()
-# options.add_argument("--headless=new")
+options.add_argument("--headless=new")
 driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
 
 # Manage Your Account And Password
