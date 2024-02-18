@@ -40,6 +40,6 @@ with open("musicas.txt", "w") as arquivo:
             arquivo.write(link_download_musica + "\n") # Salvando o link da musica
             driver.get(link_album)
         except Exception as e:
-            print("links salvos em musicas.txt ")
+            print("Saved links on musicas.txt ")
             driver.close()
             break

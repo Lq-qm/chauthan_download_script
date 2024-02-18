@@ -15,7 +15,7 @@ driver.get("https://chauthanh.info/animeost/browse/A.html")
 
 # Lista Geral
 letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-letra = input("coloque a letra desejada: ")
+letra = input("Choose a letter: ")
 if letra in letras:
     posicao = letras.index(letra) + 2
     print("letra selecionada: " + letra)
@@ -33,8 +33,8 @@ if letra in letras:
                 print(link_album)
                 arquivo.write(link_album + '\n')
             except Exception as e:
-                print('arquivos salvos em links_' + letra + '_.txt')
+                print('Saved on links_' + letra + '_.txt')
                 driver.close()
                 break 
 else:
-    print("letra invalida")
+    print("Invalid Letter")
