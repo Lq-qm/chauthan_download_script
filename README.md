@@ -9,7 +9,7 @@ If you have a premium account, you can download a zipped file of an album. This 
 
 # Disclaimer:
 
-**I dont't encourage piracy or anything else. The website is free to download music and this script is just a quality of life improvement. If you liked Chauthan work, consider to donate to the website.**
+**I dont't encourage piracy! The website is free to download music and this script is just a quality of life improvement. If you liked Chauthan work, consider to donate to the website.**
 
 ## Requiriments:
 
